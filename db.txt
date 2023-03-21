@@ -1,0 +1,10 @@
+create dabase quiz; 
+
+
+create table quiz (
+    id int not null auto_increment,
+    name varchar(25),
+    nota int not null,
+    tempo time,
+    primary key (id)
+);

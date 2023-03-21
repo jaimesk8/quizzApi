@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Engenharia de Requisitos</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" href="quiz.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		
+		<div id="container">
+			
+            <h1>Quiz Engenharia de Requisitos</h1>
+   			<br/><span id="chronometer"></span>
+  			<div id="quiz" action="/save"></div>
+    		  <form method="POST" onsubmit="return submitForm()">
+				<input type="text" id="name" placeholder="Preenche e clica Enter">
+				<input type="submit" id="startButton" onclick="hideButton()" value="Começar">
+				<input type="submit" id="stopButton" value="Concluir Quiz" hidden>
+			  </form>
+    		  <br><br>
+    		<div class="button" id="next"><a href="#">Next</a></div>
+    		<div class="button" id="prev"><a href="#">Prev</a></div> 
+			<div id="output"></div>
+			
+			<p id="verresultados" style="color: aliceblue;" hidden>Veja os resultados <a style="color: aliceblue;" href="/quizES/results.html">Aqui!</a></p>
+    	</div>
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+		<script src="quiz.js"></script>
+		<script src="index.js"></script>
+		<script>
+			function submitForm() {
+			  var nameInput = document.getElementById("name");
+			  var outputDiv = document.getElementById("output");
+			  
+			  if (nameInput.value != "") {
+				outputDiv.innerHTML = "hello, " + nameInput.value + "!";
+				nameInput.style.display = "none";
+				return false;
+			  } else {
+				return true;
+			  }
+			}
+		  </script>
+		   <script>
+			function hideButton() {
+			  var button = document.getElementById("startButton");
+			  button.style.display = "none";
+			}
+		  </script>
+	</body>
+</html>
