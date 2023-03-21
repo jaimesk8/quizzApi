@@ -166,7 +166,7 @@
           headers: { "Content-Type": "application/json" }
           };
   
-          fetch('http://192.168.1.11:3000/save',options)//,options)
+          fetch('http://localhost:3000/save',options)//,options)
           .then(response => {return response.json()})
           .then(data => {
                 console.log(data)
