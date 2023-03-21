@@ -60,12 +60,7 @@ app.post('/save', (req, res) => {
   });
 });
 
-app.get('/get', (req,res) => {
-
-  
-
-});
 
 
-app.listen(port,'192.168.1.11');
+app.listen(port,'127.0.0.1');
 
