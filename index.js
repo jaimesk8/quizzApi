@@ -16,9 +16,9 @@ app.use(express.static('public'))
 const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: "root",
-  password: "password",
-  database: "quiz"
+  user: "YOURUSER",
+  password: "YOURPASSOWRD",
+  database: "YOURDBNAME"
 });
 
 //converter data to json como resposta á nossa aplicação
