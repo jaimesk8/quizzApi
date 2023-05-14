@@ -60,7 +60,7 @@ app.post('/save', (req, res) => {
   });
 });
 
+console.log("server on");
 
-
-app.listen(port,'127.0.0.1');
+app.listen(port,'192.168.1.11');
 

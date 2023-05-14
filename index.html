@@ -10,12 +10,12 @@
 		
 		<div id="container">
 			
-            <h1>Quiz Engenharia de Requisitos</h1>
+            <h1>Quiz sobre Project Planning</h1>
    			<br/><span id="chronometer"></span>
   			<div id="quiz" action="/save"></div>
     		  <form method="POST" onsubmit="return submitForm()">
 				<input type="text" id="name" placeholder="Preenche e clica Enter">
-				<input type="submit" id="startButton" onclick="hideButton()" value="Começar">
+				<input type="submit" id="startButton" onclick="hideButton(); return submitForm()"value="Começar">
 				<input type="submit" id="stopButton" value="Concluir Quiz" hidden>
 			  </form>
     		  <br><br>
@@ -23,8 +23,9 @@
     		<div class="button" id="prev"><a href="#">Prev</a></div> 
 			<div id="output"></div>
 			
-			<p id="verresultados" style="color: aliceblue;" hidden>Veja os resultados <a style="color: aliceblue;" href="/quizES/results.html">Aqui!</a></p>
-    	</div>
+			<p id="verresultados" style="color: aliceblue;" hidden>Veja os resultados <a style="color: aliceblue;" href="/quizzApi/results.html">Aqui!</a></p>
+    	</div><a style="align-items: right;">Quizz by Jaime Marinho :)</a>
+		
         <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 		<script src="quiz.js"></script>
 		<script src="index.js"></script>

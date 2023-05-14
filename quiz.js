@@ -3,7 +3,7 @@
  {
   var allQuestions = [{
     question: "Qual o teu nome?",
-    options:[] ,
+    options: [] ,
     answer: null
   },{
     question: "Qual a necessidade da engenharia de requisitos no devenvolvimento de software?",
